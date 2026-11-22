@@ -1,0 +1,1 @@
+7fa6ab9ce33f5a3aeb3d34b8f252ff004b2f09a40c2406ca1d22a7388267f720  SP2VariableDialogSize-v1.0.0-win-x64.zip

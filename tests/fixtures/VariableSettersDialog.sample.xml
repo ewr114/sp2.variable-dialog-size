@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../Schema.xsd">
+   <!--
+      Synthetic fixture that mirrors the structure of the dialog XML the plugin patches.
+      It is hand-written (not extracted from the game) so this repository contains no
+      game assets, but the element/attribute names are the ones the plugin relies on.
+   -->
+   <Stylesheets>
+      <Stylesheet path="Xml/Styles" />
+      <Stylesheet>
+         <Styles>
+            <Style class="variable-row" height="50" />
+            <Style class="row-open" height="105" />
+         </Styles>
+         <Templates>
+            <Template templateId="variable-row">
+               <Empty id="variable-row" class="variable-row" />
+            </Template>
+         </Templates>
+      </Stylesheet>
+   </Stylesheets>
+
+   <Widgets>
+      <Instance templateId="dialog" class="dialog-wide" script="BlueprintTweaksExample">
+         <Section sectionId="content">
+            <ScrollView height="400">
+               <VerticalLayout id="items-parent" spacing="5" padding="3" />
+            </ScrollView>
+         </Section>
+         <Section sectionId="buttons">
+            <Button id="okay-button">
+               <Text text="Okay" />
+            </Button>
+         </Section>
+      </Instance>
+   </Widgets>
+</Xml>
